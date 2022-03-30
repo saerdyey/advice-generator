@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+$lightCyan: hsl(193, 38%, 86%);
+$neonGreen: hsl(150, 100%, 66%);
+$grayishBLue: hsl(217, 19%, 38%);
+$darkGrayishBLue: hsl(217, 19%, 24%);
+$darkBLue: hsl(218, 23%, 16%);
+
+* {
+  font-family: "Manrope", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  background: $darkBLue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  #card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $darkGrayishBLue;
+    padding: 36px;
+    max-width: 480px;
+    border-radius: 10px;
+    position: relative;
+    margin: 32px;
+    #advice-no {
+      font-size: 14px;
+      margin-bottom: 20px;
+      color: $neonGreen;
+      letter-spacing: 2;
+      letter-spacing: 2px;
+    }
+    #advice {
+      color: $lightCyan;
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    #divider {
+      width: 100%;
+      margin-bottom: 24px;
+    }
+    #dice {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: $neonGreen;
+      bottom: -24px;
+      transition: ease-in-out 0.1s;
+      img {
+        width: 20px;
+      }
+      &:hover {
+        cursor: pointer;
+        box-shadow: 0 0 40px 3px $neonGreen;
+      }
+    }
+  }
+  .attribution-holder {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    &:hover {
+      .attribution {
+        transform: translateY(0);
+      }
+    }
+  }
+  .attribution {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    transform: translateY(100%);
+    transition: ease-in-out 0.1s;
+    font-size: 11px;
+    text-align: center;
+    a{
+        color: hsl(150, 90%, 28%);
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .attribution {
+      flex-direction: column;
+    }
+  }
+}
