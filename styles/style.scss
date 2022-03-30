@@ -30,7 +30,8 @@ $darkBLue: hsl(218, 23%, 16%);
     max-width: 480px;
     border-radius: 10px;
     position: relative;
-    margin: 32px;
+    margin: 16px;
+    box-shadow: 10px 10px 42px 1px rgba(0, 0, 0, 0.32);
     #advice-no {
       font-size: 14px;
       margin-bottom: 20px;
@@ -90,8 +91,8 @@ $darkBLue: hsl(218, 23%, 16%);
     transition: ease-in-out 0.1s;
     font-size: 11px;
     text-align: center;
-    a{
-        color: hsl(150, 90%, 28%);
+    a {
+      color: hsl(150, 90%, 28%);
     }
   }
 
