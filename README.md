@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [FE Mentor Solution](https://your-solution-url.com)
+- Solution URL: [FE Mentor Solution](https://www.frontendmentor.io/solutions/advice-generator-using-api-ByISQZfmq)
 - Live Site URL: [Demo](https://fluffy-druid-408ab8.netlify.app)
 
 ## My process
